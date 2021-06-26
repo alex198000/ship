@@ -1646,9 +1646,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1156978654}
-          m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
-          m_MethodName: 
+        - m_Target: {fileID: 1156978656}
+          m_TargetAssemblyTypeName: TestMoove, Assembly-CSharp
+          m_MethodName: StopMove
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1662,9 +1662,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1156978654}
-          m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
-          m_MethodName: 
+        - m_Target: {fileID: 1156978656}
+          m_TargetAssemblyTypeName: TestMoove, Assembly-CSharp
+          m_MethodName: MoveRight
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2158,11 +2158,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6020313712292669828, guid: c91d458c12526534eb19d65378204353, type: 3}
   m_PrefabInstance: {fileID: 5233456974663517127}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1156978655 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2709791935418197139, guid: c91d458c12526534eb19d65378204353, type: 3}
-  m_PrefabInstance: {fileID: 5233456974663517127}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1156978656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2172,9 +2167,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1156978654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16af59f8051b061489ee844f281b7fb8, type: 3}
+  m_Script: {fileID: 11500000, guid: 54e669f041256c346be01b74af078c0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 20
 --- !u!1 &1160690612
 GameObject:
   m_ObjectHideFlags: 0
@@ -3071,13 +3067,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1156978655}
-          m_TargetAssemblyTypeName: UnityEngine.Transform, UnityEngine
-          m_MethodName: SetParent
-          m_Mode: 2
+        - m_Target: {fileID: 1156978656}
+          m_TargetAssemblyTypeName: TestMoove, Assembly-CSharp
+          m_MethodName: StopMove
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -3087,9 +3083,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1156978654}
-          m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
-          m_MethodName: 
+        - m_Target: {fileID: 1156978656}
+          m_TargetAssemblyTypeName: TestMoove, Assembly-CSharp
+          m_MethodName: MoveLeft
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
