@@ -211,9 +211,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1156978654}
-        m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1156978656}
+        m_TargetAssemblyTypeName: TestMoove, Assembly-CSharp
+        m_MethodName: Poned
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -344,9 +344,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1156978654}
-        m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1156978656}
+        m_TargetAssemblyTypeName: TestMoove, Assembly-CSharp
+        m_MethodName: Chetverg
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -704,9 +704,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1156978654}
-        m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1156978656}
+        m_TargetAssemblyTypeName: TestMoove, Assembly-CSharp
+        m_MethodName: Voskr
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1031,9 +1031,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1156978654}
-        m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1156978656}
+        m_TargetAssemblyTypeName: TestMoove, Assembly-CSharp
+        m_MethodName: Srerda
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1384,9 +1384,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1156978654}
-        m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1156978656}
+        m_TargetAssemblyTypeName: TestMoove, Assembly-CSharp
+        m_MethodName: Vtorn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2098,9 +2098,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1156978654}
-        m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1156978656}
+        m_TargetAssemblyTypeName: TestMoove, Assembly-CSharp
+        m_MethodName: Chekk
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2171,6 +2171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+  result: 0
 --- !u!1 &1160690612
 GameObject:
   m_ObjectHideFlags: 0
@@ -2824,9 +2825,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1156978654}
-        m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1156978656}
+        m_TargetAssemblyTypeName: TestMoove, Assembly-CSharp
+        m_MethodName: Subbota
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3435,9 +3436,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1156978654}
-        m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 1156978656}
+        m_TargetAssemblyTypeName: TestMoove, Assembly-CSharp
+        m_MethodName: Pyatniza
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
