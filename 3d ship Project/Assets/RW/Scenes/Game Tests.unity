@@ -990,7 +990,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   seno: {fileID: 6297227666704883404, guid: 4d23f205d14eb9a459895b6b229c5b6f, type: 3}
-  fireRate: 3
+  fireRate: 2
   senoManager: {fileID: 486697018}
 --- !u!1 &1160690612
 GameObject:
