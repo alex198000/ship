@@ -601,7 +601,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1156978656}
-          m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
+          m_TargetAssemblyTypeName: fireTractor, Assembly-CSharp
           m_MethodName: StopMove
           m_Mode: 1
           m_Arguments:
@@ -617,7 +617,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1156978656}
-          m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
+          m_TargetAssemblyTypeName: fireTractor, Assembly-CSharp
           m_MethodName: MoveRight
           m_Mode: 1
           m_Arguments:
@@ -917,7 +917,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1156978656}
-        m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
+        m_TargetAssemblyTypeName: fireTractor, Assembly-CSharp
         m_MethodName: Fire
         m_Mode: 1
         m_Arguments:
@@ -985,12 +985,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1156978654}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa14b1c7ee099374c8361693cbd4e139, type: 3}
+  m_Script: {fileID: 11500000, guid: 24353b1d4178d8d478fd945ce67c8260, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 5
   seno: {fileID: 6297227666704883404, guid: 4d23f205d14eb9a459895b6b229c5b6f, type: 3}
-  fireRate: 1
+  fireRate: 3
   senoManager: {fileID: 486697018}
 --- !u!1 &1160690612
 GameObject:
@@ -1478,7 +1478,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1156978656}
-          m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
+          m_TargetAssemblyTypeName: fireTractor, Assembly-CSharp
           m_MethodName: StopMove
           m_Mode: 1
           m_Arguments:
@@ -1494,7 +1494,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1156978656}
-          m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
+          m_TargetAssemblyTypeName: fireTractor, Assembly-CSharp
           m_MethodName: MoveLeft
           m_Mode: 1
           m_Arguments:
