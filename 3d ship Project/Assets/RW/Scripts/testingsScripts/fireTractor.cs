@@ -12,6 +12,7 @@ public class fireTractor : MonoBehaviour
     private float nextFire;
     private Transform spawnPoiont;
     [SerializeField] private Transform senoManager;
+    
     private TractorState tractorState = TractorState.Stop;
 
     private void Awake()
