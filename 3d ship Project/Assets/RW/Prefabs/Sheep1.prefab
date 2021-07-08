@@ -43,7 +43,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   diraction: {x: 0, y: -1, z: 0}
-  jumpForce: 60
+  jumpForce: 600
   heartEffect: {fileID: 4315454884705665302, guid: 870e4f202ddb69143ac55bb776580025, type: 3}
 --- !u!1001 &7064530861492069211
 PrefabInstance:

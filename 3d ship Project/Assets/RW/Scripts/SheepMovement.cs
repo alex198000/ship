@@ -20,14 +20,20 @@ public class SheepMovement : MonoBehaviour
     {
         transform.Translate(diraction * speed * Time.fixedDeltaTime);
     }
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Water")
         {
             rb.isKinematic = false;
-            GetComponent<BoxCollider>().enabled = false;
+            //GetComponent<BoxCollider>().enabled = false;
             rb.AddForce(Vector3.up * jumpForce);
 
+        }
+        if (other.gameObject.tag == "WaterOff")
+        {
+            rb.isKinematic = true;
+            //GetComponent<BoxCollider>().enabled = true;
+            // rb.AddForce(Vector3.forward * speed);
         }
 
     }
@@ -36,12 +42,7 @@ public class SheepMovement : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-          if (other.gameObject.tag == "WaterOff")
-           {
-        rb.isKinematic = true;
-        GetComponent<BoxCollider>().enabled = true;
-            // rb.AddForce(Vector3.forward * speed);
-           }
+         
         if (other.gameObject.tag == "Seno")
         {
             rb.isKinematic = false;
@@ -53,6 +54,8 @@ public class SheepMovement : MonoBehaviour
             GameObject effect = Instantiate(heartEffect, transform.position, heartEffect.transform.rotation);
             Destroy(effect, 1f);
         }
+
+       
     }
 
    
