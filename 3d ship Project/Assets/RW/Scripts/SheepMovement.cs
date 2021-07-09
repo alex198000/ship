@@ -55,7 +55,17 @@ public class SheepMovement : MonoBehaviour
             Destroy(effect, 1f);
         }
 
-       
+        if (other.gameObject.tag == "Tractor")
+        {
+            rb.isKinematic = false;
+            GetComponent<BoxCollider>().enabled = false;
+            rb.AddForce(Vector3.up * jumpForce);
+            Destroy(gameObject, 0.5f);
+            
+
+            GameObject effect = Instantiate(heartEffect, transform.position, heartEffect.transform.rotation);
+            Destroy(effect, 1f);
+        }
     }
 
    

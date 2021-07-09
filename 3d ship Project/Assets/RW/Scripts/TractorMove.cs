@@ -71,7 +71,7 @@ public class TractorMove : MonoBehaviour
         
        GameObject seno = Instantiate(this.seno, spawnPoiont.position, this.seno.transform.rotation);
         seno.transform.SetParent(senoManager);
-        Destroy(seno, 10f);
+        Destroy(seno, 25f);
             nextFire = fireRate;
         }
     }

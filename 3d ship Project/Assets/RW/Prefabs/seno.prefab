@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 6297227666704883393}
   m_Layer: 0
   m_Name: seno
-  m_TagString: Untagged
+  m_TagString: Seno
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
