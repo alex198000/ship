@@ -2491,7 +2491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8570285201340937833, guid: c91d458c12526534eb19d65378204353, type: 3}
       propertyPath: fireRate
-      value: 0.5
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8570285201340937833, guid: c91d458c12526534eb19d65378204353, type: 3}
       propertyPath: senoManager
