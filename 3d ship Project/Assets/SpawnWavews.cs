@@ -17,7 +17,7 @@ public class SpawnWavews : MonoBehaviour
 
     void Start()
     {
-       StartCoroutine( SpawnWaves() );
+        StartCoroutine(SpawnWaves());
     }
 
     // Update is called once per frame
@@ -27,19 +27,19 @@ public class SpawnWavews : MonoBehaviour
         while (true)
         {
 
-        
-        for (int i = 0; i <= count; i++)
-        {
+
+            for (int i = 0; i <= count; i++)
+            {
 
 
-            float xRandom = Random.Range(boundary.x, boundary.y);
-            spawnPointPosition = new Vector3(xRandom, spawnPointPosition.y, spawnPointPosition.z);
-            GameObject Enemy = Instantiate(this.Enemy, spawnPointPosition, this.Enemy.transform.rotation);
-            Enemy.transform.SetParent(SheepManager);
+                float xRandom = Random.Range(boundary.x, boundary.y);
+                spawnPointPosition = new Vector3(xRandom, spawnPointPosition.y, spawnPointPosition.z);
+                GameObject Enemy = Instantiate(this.Enemy, spawnPointPosition, this.Enemy.transform.rotation);
+                Enemy.transform.SetParent(SheepManager);
 
-           
-            yield return new WaitForSeconds(Random.Range(0.5f, spawnRate) );
-        }
+
+                yield return new WaitForSeconds(Random.Range(0.5f, spawnRate));
+            }
 
             yield return new WaitForSeconds(waveWait);
         }

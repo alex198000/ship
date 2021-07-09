@@ -45,6 +45,7 @@ MonoBehaviour:
   diraction: {x: 0, y: -1, z: 0}
   jumpForce: 600
   heartEffect: {fileID: 4315454884705665302, guid: 870e4f202ddb69143ac55bb776580025, type: 3}
+  soundManager: {fileID: 11400000, guid: a6de0859acff22741b999a2d39637e5c, type: 2}
 --- !u!1001 &7064530861492069211
 PrefabInstance:
   m_ObjectHideFlags: 0

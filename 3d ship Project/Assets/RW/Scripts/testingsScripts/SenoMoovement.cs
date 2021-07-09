@@ -8,9 +8,9 @@ public class SenoMoovement : MonoBehaviour
     [SerializeField] private Vector3 diraction;
 
 
-    void FixedUpdate()
+    void Update()
     {
-        transform.Translate(diraction * speed * Time.fixedDeltaTime);
+        transform.Translate(diraction * speed * Time.deltaTime);
     }
 
 

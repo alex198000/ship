@@ -20,7 +20,7 @@ public class TractorMove : MonoBehaviour
     private float nextFire;
     private Transform spawnPoiont;
     [SerializeField]private Transform senoManager;
-
+    [SerializeField] private SoundManager soundManager;
 
     private TractorState tractorState = TractorState.Stop;
 
@@ -68,8 +68,8 @@ public class TractorMove : MonoBehaviour
         if(nextFire < 0)
         {
 
-        
-       GameObject seno = Instantiate(this.seno, spawnPoiont.position, this.seno.transform.rotation);
+            soundManager.PlayShootClip();
+            GameObject seno = Instantiate(this.seno, spawnPoiont.position, this.seno.transform.rotation);
         seno.transform.SetParent(senoManager);
         Destroy(seno, 25f);
             nextFire = fireRate;

@@ -9,7 +9,7 @@ public class SheepMovement : MonoBehaviour
     [SerializeField] private float jumpForce;
     private Rigidbody rb;
     [SerializeField] private GameObject heartEffect;
-
+    [SerializeField] private SoundManager soundManager;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -41,28 +41,30 @@ public class SheepMovement : MonoBehaviour
    
     private void OnTriggerEnter(Collider other)
     {
-
-         
-        if (other.gameObject.tag == "Seno")
+        SenoMoovement senoMoovement = other.GetComponent<SenoMoovement>();
+        
+        if (senoMoovement != null)                                            //(other.gameObject.tag == "Seno")
         {
             rb.isKinematic = false;
             GetComponent<BoxCollider>().enabled = false;
             rb.AddForce(Vector3.up * jumpForce);
             Destroy(gameObject, 0.5f);
             Destroy(other.gameObject);
-
+            soundManager.PlaySheepHitClip();
             GameObject effect = Instantiate(heartEffect, transform.position, heartEffect.transform.rotation);
             Destroy(effect, 1f);
         }
 
-        if (other.gameObject.tag == "Tractor")
+
+        TractorMove tractorMove = other.GetComponent<TractorMove>();
+        if (tractorMove != null)                                                 //(other.gameObject.tag == "Tractor")
         {
             rb.isKinematic = false;
             GetComponent<BoxCollider>().enabled = false;
             rb.AddForce(Vector3.up * jumpForce);
             Destroy(gameObject, 0.5f);
-            
 
+            soundManager.PlaySheepHitClip();
             GameObject effect = Instantiate(heartEffect, transform.position, heartEffect.transform.rotation);
             Destroy(effect, 1f);
         }

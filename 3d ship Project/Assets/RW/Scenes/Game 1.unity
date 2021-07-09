@@ -962,6 +962,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2eff6ca50f7d3144d93e5610d7a15166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundManager: {fileID: 11400000, guid: a6de0859acff22741b999a2d39637e5c, type: 2}
 --- !u!65 &845077948
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2491,12 +2492,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8570285201340937833, guid: c91d458c12526534eb19d65378204353, type: 3}
       propertyPath: fireRate
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8570285201340937833, guid: c91d458c12526534eb19d65378204353, type: 3}
       propertyPath: senoManager
       value: 
       objectReference: {fileID: 716457343}
+    - target: {fileID: 8570285201340937833, guid: c91d458c12526534eb19d65378204353, type: 3}
+      propertyPath: soundManager
+      value: 
+      objectReference: {fileID: 11400000, guid: a6de0859acff22741b999a2d39637e5c, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c91d458c12526534eb19d65378204353, type: 3}
 --- !u!114 &5233456974663517128 stripped
