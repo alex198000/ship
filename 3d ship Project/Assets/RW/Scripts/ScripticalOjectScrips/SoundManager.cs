@@ -48,3 +48,4 @@ public class SoundManager : ScriptableObject
         PlaySound(ButtonClip);
     }
 }
+
