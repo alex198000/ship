@@ -10,7 +10,8 @@ public class SoundManager : ScriptableObject
     [SerializeField] private AudioClip shootClip;
     [SerializeField] private AudioClip sheepHitClip;
     [SerializeField] private AudioClip sheepDropClip;
-
+    [SerializeField] private AudioClip tractorMoveClip;
+    [SerializeField] private AudioClip ButtonClip;
 
     [SerializeField] private Vector3 cameraPostion;
 
@@ -37,7 +38,13 @@ public class SoundManager : ScriptableObject
     {
         PlaySound(sheepDropClip);
     }
+    public void PlaytractorMoveClip()
+    {
+        PlaySound(tractorMoveClip);
+    }
 
-
-
+    public void PlayButtonClip()
+    {
+        PlaySound(ButtonClip);
+    }
 }
