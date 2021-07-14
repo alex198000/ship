@@ -9,6 +9,7 @@ TagManager:
   - WaterOff
   - Seno
   - Tractor
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -2093,6 +2093,7 @@ MonoBehaviour:
   boundary: {x: -22, y: 22}
   srartWave: 1.5
   waveWait: 10
+  sheepManager: {fileID: 11400000, guid: e47befd447791744b80934dc8c524e6e, type: 2}
 --- !u!4 &1944671425 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4030149472119868258, guid: b1854d2471a640343af5a2dbf8051036, type: 3}
