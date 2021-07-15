@@ -8,6 +8,8 @@ public class SheepProperty : ScriptableObject
 
     [SerializeField]private string sheepName;
     [SerializeField] private float sheepSpeed;
+    [SerializeField] private Transform sheepSize;
+    [SerializeField] private SpriteRenderer sheepColor;
 
     //public string SheepName
     //{
@@ -24,10 +26,27 @@ public class SheepProperty : ScriptableObject
     //}
 
 
-    public string SheepName { get; set; }
+    public string SheepName 
+    { 
+        get;
+        set;
+    }
 
-    public float SpeedSheep { get; }
+    public float SpeedSheep 
+    { 
+        get;
+    }
 
+    public string SheepSize 
+    { 
+        get;
+        set;
+    }
+
+    public float SpeedColor 
+    { 
+        get;
+    }
 
 
 

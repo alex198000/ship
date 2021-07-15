@@ -44,14 +44,14 @@ public class TractorMove : MonoBehaviour
 
     public void MoveRight()
     {
-        soundManager.PlayButtonClip();
+        //soundManager.PlayButtonClip();
         direction = 1f;
         //mooving = true;
         tractorState = TractorState.Move;
     }
     public void MoveLeft()
     {
-        soundManager.PlayButtonClip();
+        //soundManager.PlayButtonClip();
         direction = -1f;
         // mooving = true;
         tractorState = TractorState.Move;
@@ -85,7 +85,7 @@ public class TractorMove : MonoBehaviour
                 
                 transform.Translate(Vector3.right * speed * direction * Time.deltaTime);
             }
-            soundManager.PlaytractorMoveClip();
+            //soundManager.PlaytractorMoveClip();
         }
 
     }
