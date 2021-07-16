@@ -9,16 +9,18 @@ public class SheepMovement : MonoBehaviour
     [SerializeField] private float jumpForce;
     private Rigidbody rb;
     [SerializeField] private GameObject heartEffect;
+    [SerializeField] private SheepProperty sheepProperty;
     [SerializeField] private SoundManager soundManager;
     private void Awake()
     {
+        //sheepProperty.SheepColor(Random.Range(1,3));
         rb = GetComponent<Rigidbody>();
 
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        transform.Translate(diraction * speed * Time.fixedDeltaTime);
+        transform.Translate(diraction * speed * Time.deltaTime);
     }
     private void OnTriggerExit(Collider other)
     {

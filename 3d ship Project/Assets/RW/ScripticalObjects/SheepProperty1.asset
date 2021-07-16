@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sheepName: Doroty
   sheepSpeed: 10
+  sheepSize: 2
+  sheepColor: 1
