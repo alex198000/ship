@@ -4,21 +4,29 @@ using UnityEngine;
 
 public class SheepMovement : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    //[SerializeField] private float speed;
     [SerializeField] private Vector3 diraction;
     [SerializeField] private float jumpForce;
     private Rigidbody rb;
     [SerializeField] private GameObject heartEffect;
     [SerializeField] private SoundManager soundManager;
+
+     private SheepProperty sheepProperty;
+
+
+
+
+
     private void Awake()
     {
+       
         rb = GetComponent<Rigidbody>();
 
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        transform.Translate(diraction * speed * Time.fixedDeltaTime);
+        transform.Translate(diraction * sheepProperty.SpeedSheep * Time.deltaTime);
     }
     private void OnTriggerExit(Collider other)
     {
@@ -70,6 +78,11 @@ public class SheepMovement : MonoBehaviour
         }
     }
 
-   
+   public void SetPropertyToSheep(SheepProperty sheepProperty)
+    {
+        this.sheepProperty = sheepProperty;
+        transform.localScale = new Vector3(SheepProperty.sheepScale.x, SheepProperty.sheep.y, SheepProperty.sheepsScale.z);
+    }
     
 }
+

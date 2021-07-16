@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 
 public enum TractorState { Move, Stop };
 
@@ -24,10 +24,12 @@ public class TractorMove : MonoBehaviour
 
     private TractorState tractorState = TractorState.Stop;
 
+    [SerializeField] private UnityEvent shootEvent;
     private void Awake()
     {
         spawnPoiont = transform.GetChild(1);
-       // senoManager = transform.GetChild(4);
+        // senoManager = transform.GetChild(4);
+        
     }
 
 
@@ -73,6 +75,7 @@ public class TractorMove : MonoBehaviour
         seno.transform.SetParent(senoManager);
         Destroy(seno, 25f);
             nextFire = fireRate;
+            shootEvent.Invoke();
         }
     }
     private void MoveTractor()

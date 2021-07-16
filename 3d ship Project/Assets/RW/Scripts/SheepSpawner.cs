@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class SheepSpawner : MonoBehaviour
 {
-    [SerializeField] private GameObject sheep;
+    [SerializeField] private GameObject sheepPrefab;
     [SerializeField] private Vector3 spawnPointPosition;
     [SerializeField] private Vector2 boundary;
     [SerializeField] private float spawnRate;
    
     [SerializeField] private Transform SheepManager;
+    [SerializeField] private List<SheepProperty> sheepProperties;
 
 
 
@@ -22,8 +23,12 @@ public class SheepSpawner : MonoBehaviour
     {
         float xRandom = Random.Range(boundary.x, boundary.y);
         spawnPointPosition = new Vector3(xRandom, spawnPointPosition.y, spawnPointPosition.z);
-        GameObject sheep = Instantiate(this.sheep, spawnPointPosition, this.sheep.transform.rotation);
+        GameObject sheep = Instantiate(this.sheepPrefab, spawnPointPosition, this.sheepPrefab.transform.rotation);
         sheep.transform.SetParent(SheepManager);
+
+        int randomSheepPropertyIndex = Random.Range(0, sheepProperties.Count);
+
+        sheep.GetComponent<SheepMovement>().SetPropertyToSheep(sheepProperties[randomSheepPropertyIndex]);
     }
 
     IEnumerator SpawnSheep()

@@ -41,11 +41,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c289f16226b72d4a9e8ab073ea6d961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
   diraction: {x: 0, y: -1, z: 0}
   jumpForce: 600
   heartEffect: {fileID: 4315454884705665302, guid: 870e4f202ddb69143ac55bb776580025, type: 3}
   soundManager: {fileID: 11400000, guid: a6de0859acff22741b999a2d39637e5c, type: 2}
+  sheepProperty: {fileID: 11400000, guid: 036b6e174713bf9488377ffd985c2973, type: 2}
 --- !u!1001 &7064530861492069211
 PrefabInstance:
   m_ObjectHideFlags: 0

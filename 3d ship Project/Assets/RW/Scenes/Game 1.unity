@@ -1741,8 +1741,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0039667, y: 0.6541579, z: 0.12390397}
-  m_Center: {x: -0.04698336, y: -0.16913521, z: -0.048047908}
+  m_Size: {x: 1.0039667, y: 0.095907085, z: 2.4916348}
+  m_Center: {x: -0.04698336, y: 0.10998962, z: -1.2319132}
 --- !u!4 &1624906044
 Transform:
   m_ObjectHideFlags: 0
@@ -1829,8 +1829,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.9999997, z: 0.1661043}
-  m_Center: {x: 0, y: 0, z: -0.23048791}
+  m_Size: {x: 1, y: 0.12904331, z: 4.744757}
+  m_Center: {x: 0, y: 0.4354762, z: -2.519812}
 --- !u!4 &1779989566
 Transform:
   m_ObjectHideFlags: 0
@@ -2048,16 +2048,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903023912}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40abdc9ecdfa8694ba46876ae922b139, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sheep: {fileID: 7064530861492102651, guid: 2b28c4da99f438e4fbf03363041f51cd, type: 3}
+  sheepPrefab: {fileID: 7064530861492102651, guid: 2b28c4da99f438e4fbf03363041f51cd, type: 3}
   spawnPointPosition: {x: 0, y: 0, z: 65}
   boundary: {x: -22, y: 22}
   spawnRate: 1
   SheepManager: {fileID: 2033703054}
+  sheepProperties:
+  - {fileID: 11400000, guid: 5c51fd8cb4d9c0b4fad5c6c012eb16b1, type: 2}
+  - {fileID: 11400000, guid: daf50ff65d12f584488e073b2299b25c, type: 2}
+  - {fileID: 11400000, guid: 036b6e174713bf9488377ffd985c2973, type: 2}
 --- !u!4 &1903023914
 Transform:
   m_ObjectHideFlags: 0
@@ -2079,7 +2083,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903023912}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7b2abcd160e23d4196146ddc1d23ed9, type: 3}
   m_Name: 
@@ -2093,7 +2097,7 @@ MonoBehaviour:
   boundary: {x: -22, y: 22}
   srartWave: 1.5
   waveWait: 10
-  sheepManager: {fileID: 11400000, guid: e47befd447791744b80934dc8c524e6e, type: 2}
+  sheepManager: {fileID: 0}
 --- !u!4 &1944671425 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4030149472119868258, guid: b1854d2471a640343af5a2dbf8051036, type: 3}
@@ -2127,8 +2131,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.3677362, z: 0.12812144}
-  m_Center: {x: 0, y: 0.2643247, z: -0.030939238}
+  m_Size: {x: 1.0974343, y: 0.26477173, z: 5.7962523}
+  m_Center: {x: 0.04871706, y: 0.81580335, z: -2.2300735}
 --- !u!4 &1992310574
 Transform:
   m_ObjectHideFlags: 0
@@ -2137,7 +2141,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1992310572}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -78.85158, y: 35.872105, z: -28.935751}
+  m_LocalPosition: {x: -78.85158, y: 33.2, z: -28.935751}
   m_LocalScale: {x: -9.6, y: -7.12, z: 7.7}
   m_Children: []
   m_Father: {fileID: 113161904}
@@ -2201,8 +2205,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.9999997, z: 0.15360956}
-  m_Center: {x: 0, y: 0, z: -0.018195176}
+  m_Size: {x: 1, y: 0.0706305, z: 3.5515764}
+  m_Center: {x: 0, y: 0.46468276, z: -1.7171786}
 --- !u!4 &2041398166
 Transform:
   m_ObjectHideFlags: 0
