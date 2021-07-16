@@ -14,7 +14,7 @@ public class SpawnWavews : MonoBehaviour
     [SerializeField] private Vector2 boundary;
     [SerializeField] private float srartWave;
     [SerializeField] private float waveWait;
-    [SerializeField] private SheepManager sheepManager;
+    [SerializeField] private SheepProperty sheepProperty;
     void Start()
     {
         StartCoroutine(SpawnWaves());
@@ -30,14 +30,14 @@ public class SpawnWavews : MonoBehaviour
 
             for (int i = 0; i <= count; i++)
             {
-                if (i >= 2)
-                {
-                    sheepManager.ChoiceSheepLow();
-                }
-                if (i >= 4)
-                {
-                    sheepManager.ChoiceSheepHigh();
-                }
+                //if (i >= 2)
+                //{
+                //    sheepProperty.SheepSize();
+                //}
+                //if (i >= 4)
+                //{
+                //    sheepProperty.SpeedColor();
+                //}
 
                 float xRandom = Random.Range(boundary.x, boundary.y);
                 spawnPointPosition = new Vector3(xRandom, spawnPointPosition.y, spawnPointPosition.z);
