@@ -9,10 +9,8 @@ public class SheepProperty : ScriptableObject
     [SerializeField] private string sheepName;
     [SerializeField] private float sheepSpeed;
     [SerializeField] private float sheepScale;
-    //private void OnEnable()
-    //{
-    //    SpeedSheep = 45f;
-    //}
+    //[SerializeField] private Material sheepColor;
+   
     public string SheepName
     {
         get
@@ -80,6 +78,15 @@ public class SheepProperty : ScriptableObject
         }
        
     }
+    //public Material SheepColor
+    //{
+    //    get
+    //    {
+    //        return sheepColor;
+    //    }
+
+    //}
+
 
 }
 
