@@ -91,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   diraction: {x: 0, y: 0, z: 1}
+  senoEffect: {fileID: 7187934617050511112, guid: 2420e7ad78aa43440a14760975f8d4eb, type: 3}
 --- !u!1001 &6297227666024505120
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -9,19 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: abab880e9b3558743aeaffaf8f5c8893, type: 3}
   m_Name: SheepProperty1
   m_EditorClassIdentifier: 
   sheepName: Doroty
-  sheepSpeed: 8
-  sheepScale: {x: 1.7, y: 1.7, z: 1.7}
-=======
-  m_Script: {fileID: 11500000, guid: 73b137b7de888f042aae2ca1b3316fc6, type: 3}
-  m_Name: SheepProperty1
-  m_EditorClassIdentifier: 
-  sheepName: Doroty
-  sheepSpeed: 10
-  sheepSize: 2
-  sheepColor: 1
->>>>>>> 9897fd259f968f0fc48cf518159ba682e4581aec
+  sheepSpeed: 7
+  sheepScale: 2
