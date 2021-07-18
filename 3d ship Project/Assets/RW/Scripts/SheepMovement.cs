@@ -87,6 +87,7 @@ public class SheepMovement : MonoBehaviour
     {
         this.sheepProperty = sheepProperty;
         transform.localScale = new Vector3(sheepProperty.ScaleSheep, sheepProperty.ScaleSheep, sheepProperty.ScaleSheep);
+        //Material.Color = sheepProperty.SheepColor;
     }
     
 }

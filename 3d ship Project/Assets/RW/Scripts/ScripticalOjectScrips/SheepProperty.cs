@@ -9,7 +9,7 @@ public class SheepProperty : ScriptableObject
     [SerializeField] private string sheepName;
     [SerializeField] private float sheepSpeed;
     [SerializeField] private float sheepScale;
-    //[SerializeField] private Material sheepColor;
+    [SerializeField] private Material sheepColor;
    
     public string SheepName
     {
@@ -78,14 +78,14 @@ public class SheepProperty : ScriptableObject
         }
        
     }
-    //public Material SheepColor
-    //{
-    //    get
-    //    {
-    //        return sheepColor;
-    //    }
+    public Material SheepColor
+    {
+        get
+        {
+            return sheepColor;
+        }
 
-    //}
+    }
 
 
 }

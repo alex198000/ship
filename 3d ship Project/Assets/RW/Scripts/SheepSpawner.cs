@@ -29,6 +29,7 @@ public class SheepSpawner : MonoBehaviour
         int randomSheepPropertyIndex = Random.Range(0, sheepProperties.Count);
 
         sheep.GetComponent<SheepMovement>().SetPropertyToSheep(sheepProperties[randomSheepPropertyIndex]);
+        //sheep.GetComponent<SheepMovement>().SetPropertyToSheep(sheepProperties[randomSheepPropertyIndex]);
     }
 
     IEnumerator SpawnSheep()

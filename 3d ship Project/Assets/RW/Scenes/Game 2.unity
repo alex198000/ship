@@ -221,6 +221,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 55.202003, y: -27.348001, z: 5.7660003}
+--- !u!1 &244302210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 244302212}
+  - component: {fileID: 244302211}
+  m_Layer: 0
+  m_Name: jampTriger (1)
+  m_TagString: WaterOff
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &244302211
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244302210}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.4613457, y: 0.31700134, z: 10.156509}
+  m_Center: {x: 2.7306728, y: -0.34149933, z: 2.3388824}
+--- !u!4 &244302212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244302210}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.33, y: 6.47, z: 7.86}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &289565342
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,8 +829,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1156978656}
-          m_TargetAssemblyTypeName: fireTractor, Assembly-CSharp
+        - m_Target: {fileID: 1156978657}
+          m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
           m_MethodName: StopMove
           m_Mode: 1
           m_Arguments:
@@ -801,8 +845,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1156978656}
-          m_TargetAssemblyTypeName: fireTractor, Assembly-CSharp
+        - m_Target: {fileID: 1156978657}
+          m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
           m_MethodName: MoveRight
           m_Mode: 1
           m_Arguments:
@@ -1180,8 +1224,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1156978656}
-        m_TargetAssemblyTypeName: fireTractor, Assembly-CSharp
+      - m_Target: {fileID: 1156978657}
+        m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
         m_MethodName: Fire
         m_Mode: 1
         m_Arguments:
@@ -1247,7 +1291,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1156978654}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24353b1d4178d8d478fd945ce67c8260, type: 3}
   m_Name: 
@@ -1256,6 +1300,39 @@ MonoBehaviour:
   seno: {fileID: 6297227666704883404, guid: 4d23f205d14eb9a459895b6b229c5b6f, type: 3}
   fireRate: 2
   senoManager: {fileID: 486697018}
+--- !u!114 &1156978657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156978654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa14b1c7ee099374c8361693cbd4e139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  seno: {fileID: 6297227666704883404, guid: 4d23f205d14eb9a459895b6b229c5b6f, type: 3}
+  fireRate: 1
+  senoManager: {fileID: 486697018}
+  soundManager: {fileID: 11400000, guid: a6de0859acff22741b999a2d39637e5c, type: 2}
+  shootEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!65 &1156978658
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156978654}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.912712, y: 3.4589136, z: 6.842882}
+  m_Center: {x: 0.000025749207, y: 1.2294568, z: 0.8360071}
 --- !u!1 &1160690612
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,6 +1571,50 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1285712418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1285712419}
+  - component: {fileID: 1285712420}
+  m_Layer: 0
+  m_Name: jampTriger
+  m_TagString: Water
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1285712419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285712418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.33, y: 6.47, z: 24.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1285712420
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285712418}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.4613457, y: 0.31700134, z: 10.156509}
+  m_Center: {x: 2.7306728, y: -0.34149933, z: 2.3388824}
 --- !u!1 &1373306063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1711,7 +1832,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553553606}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40abdc9ecdfa8694ba46876ae922b139, type: 3}
   m_Name: 
@@ -1748,8 +1869,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1588046575}
-  - component: {fileID: 1588046574}
   - component: {fileID: 1588046573}
+  - component: {fileID: 1588046574}
   m_Layer: 0
   m_Name: senodestr
   m_TagString: Untagged
@@ -1779,10 +1900,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1588046572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2eff6ca50f7d3144d93e5610d7a15166, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f85ca893ae4ddc49b632d3e19166441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundManager: {fileID: 11400000, guid: a6de0859acff22741b999a2d39637e5c, type: 2}
 --- !u!4 &1588046575
 Transform:
   m_ObjectHideFlags: 0
@@ -1987,8 +2107,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1156978656}
-          m_TargetAssemblyTypeName: fireTractor, Assembly-CSharp
+        - m_Target: {fileID: 1156978657}
+          m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
           m_MethodName: StopMove
           m_Mode: 1
           m_Arguments:
@@ -2003,8 +2123,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1156978656}
-          m_TargetAssemblyTypeName: fireTractor, Assembly-CSharp
+        - m_Target: {fileID: 1156978657}
+          m_TargetAssemblyTypeName: TractorMove, Assembly-CSharp
           m_MethodName: MoveLeft
           m_Mode: 1
           m_Arguments:
