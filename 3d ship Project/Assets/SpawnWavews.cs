@@ -30,14 +30,7 @@ public class SpawnWavews : MonoBehaviour
 
             for (int i = 0; i <= count; i++)
             {
-                //if (i >= 2)
-                //{
-                //    sheepProperty.SheepSize();
-                //}
-                //if (i >= 4)
-                //{
-                //    sheepProperty.SpeedColor();
-                //}
+                
 
                 float xRandom = Random.Range(boundary.x, boundary.y);
                 spawnPointPosition = new Vector3(xRandom, spawnPointPosition.y, spawnPointPosition.z);
