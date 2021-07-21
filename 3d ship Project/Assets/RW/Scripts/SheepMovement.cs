@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SheepMovement : MonoBehaviour
 {
@@ -12,8 +13,8 @@ public class SheepMovement : MonoBehaviour
     [SerializeField] private SheepProperty sheepProperty;
     [SerializeField] private SoundManager soundManager;
 
-     
 
+    [SerializeField] private UnityEvent shootSheep;
 
 
 
@@ -58,6 +59,9 @@ public class SheepMovement : MonoBehaviour
         
         if (senoMoovement != null)                                            //(other.gameObject.tag == "Seno")
         {
+
+            shootSheep.Invoke();
+            
             rb.isKinematic = false;
             GetComponent<BoxCollider>().enabled = false;
             rb.AddForce(Vector3.up * jumpForce);
