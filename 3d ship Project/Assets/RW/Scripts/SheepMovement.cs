@@ -71,6 +71,9 @@ public class SheepMovement : MonoBehaviour
             soundManager.PlaySheepHitClip();
             GameObject effect = Instantiate(heartEffect, transform.position, heartEffect.transform.rotation);
             Destroy(effect, 1f);
+
+            scoreManager.SaveSheep();
+            savedSheepEvent.Raise();
         }
 
 

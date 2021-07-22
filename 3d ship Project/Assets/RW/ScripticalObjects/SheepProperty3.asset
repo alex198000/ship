@@ -15,3 +15,4 @@ MonoBehaviour:
   sheepName: Trinity
   sheepSpeed: 3
   sheepScale: 4
+  sheepColor: {fileID: 2100000, guid: 76192e63ebf2cc14fb4b84f132b5cff8, type: 2}

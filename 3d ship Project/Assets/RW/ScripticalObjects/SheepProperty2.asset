@@ -15,3 +15,4 @@ MonoBehaviour:
   sheepName: dolly
   sheepSpeed: 5
   sheepScale: 3
+  sheepColor: {fileID: 10756, guid: 0000000000000000e000000000000000, type: 0}
