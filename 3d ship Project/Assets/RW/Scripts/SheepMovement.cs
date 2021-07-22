@@ -5,25 +5,26 @@ using UnityEngine.Events;
 
 public class SheepMovement : MonoBehaviour
 {
-    //[SerializeField] private float speed;
+    [SerializeField] private float speed;
     [SerializeField] private Vector3 diraction;
     [SerializeField] private float jumpForce;
     private Rigidbody rb;
+    private MeshRenderer mrenderer;
     [SerializeField] private GameObject heartEffect;
     [SerializeField] private SheepProperty sheepProperty;
     [SerializeField] private SoundManager soundManager;
+    [SerializeField] private ScoreManager scoreManager;
 
+    //[SerializeField] private UnityEvent shootSheep;
 
-    [SerializeField] private UnityEvent shootSheep;
-
-
+    [SerializeField] private GameEvent savedSheepEvent;
 
 
     private void Awake()
     {
 
         rb = GetComponent<Rigidbody>();
-
+        mrenderer = GetComponent<MeshRenderer>();
     }
 
     void Update()
@@ -60,7 +61,7 @@ public class SheepMovement : MonoBehaviour
         if (senoMoovement != null)                                            //(other.gameObject.tag == "Seno")
         {
 
-            shootSheep.Invoke();
+            //shootSheep.Invoke();
             
             rb.isKinematic = false;
             GetComponent<BoxCollider>().enabled = false;
@@ -76,22 +77,33 @@ public class SheepMovement : MonoBehaviour
         TractorMove tractorMove = other.GetComponent<TractorMove>();
         if (tractorMove != null)                                                 //(other.gameObject.tag == "Tractor")
         {
-            rb.isKinematic = false;
-            GetComponent<BoxCollider>().enabled = false;
-            rb.AddForce(Vector3.up * jumpForce);
-            Destroy(gameObject, 0.5f);
-
-            soundManager.PlaySheepHitClip();
-            GameObject effect = Instantiate(heartEffect, transform.position, heartEffect.transform.rotation);
-            Destroy(effect, 1f);
+            DestroySheep();
         }
     }
 
-   public void SetPropertyToSheep(SheepProperty sheepProperty)
+
+    void DestroySheep()
+    {
+        rb.isKinematic = false;
+        GetComponent<BoxCollider>().enabled = false;
+        rb.AddForce(Vector3.up * jumpForce);
+        Destroy(gameObject, 0.5f);
+
+        soundManager.PlaySheepHitClip();
+        GameObject effect = Instantiate(heartEffect, transform.position, heartEffect.transform.rotation);
+        Destroy(effect, 1f);
+
+        scoreManager.SaveSheep();
+
+        savedSheepEvent.Raise();
+    }
+        public void SetPropertyToSheep(SheepProperty sheepProperty)
     {
         this.sheepProperty = sheepProperty;
         transform.localScale = new Vector3(sheepProperty.ScaleSheep, sheepProperty.ScaleSheep, sheepProperty.ScaleSheep);
-        //Material.Color = sheepProperty.SheepColor;
+        mrenderer.material = sheepProperty.SheepColor;
+
+        speed = sheepProperty.SpeedSheep;
     }
     
 }

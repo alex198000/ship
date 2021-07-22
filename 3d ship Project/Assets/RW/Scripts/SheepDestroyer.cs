@@ -5,7 +5,9 @@ using UnityEngine;
 public class SheepDestroyer : MonoBehaviour
 {
     [SerializeField] private SoundManager soundManager;
-    private void OnTriggerEnter(Collider other)
+    [SerializeField] private GameEvent droppedSheepEvent;
+    [SerializeField] private ScoreManager scoreManager;
+    private void OnTriggerExit(Collider other)
     {
         SheepMovement sheepMovement = other.GetComponent<SheepMovement>();
         if(sheepMovement != null)
@@ -15,6 +17,11 @@ public class SheepDestroyer : MonoBehaviour
             soundManager.PlayDropClip();
         other.GetComponent<Rigidbody>().isKinematic = false;
         Destroy(other.gameObject, 3f);
+
+
+            scoreManager.DropSheep();
+
+            droppedSheepEvent.Raise();
         }
     }
 }
