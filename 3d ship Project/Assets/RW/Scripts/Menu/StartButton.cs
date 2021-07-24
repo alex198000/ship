@@ -20,7 +20,7 @@ public class StartButton : MonoBehaviour, IPointerClickHandler
         {
         animator.SetTrigger("Start");
         
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.5f);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); // SceneManager.LoadScene(1);
         }
 }
