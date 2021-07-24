@@ -15,4 +15,5 @@ MonoBehaviour:
   sheepName: dolly
   sheepSpeed: 5
   sheepScale: 3
-  sheepColor: {fileID: 10756, guid: 0000000000000000e000000000000000, type: 0}
+  sheepColor: {fileID: 2100000, guid: 40397b53fa448fd4bb88c0df1594a9b8, type: 2}
+  sheepRotate: {x: 0, y: 0, z: 90}

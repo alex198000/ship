@@ -8,10 +8,13 @@ public class SheepSpawner : MonoBehaviour
     [SerializeField] private Vector3 spawnPointPosition;
     [SerializeField] private Vector2 boundary;
     [SerializeField] private float spawnRate;
-   
+    [SerializeField] private float waveRate;
+
     [SerializeField] private Transform SheepManager;
     [SerializeField] private List<SheepProperty> sheepProperties;
 
+    [SerializeField] private int waveCount;
+    [SerializeField] private int sheepCount;
 
 
     void Start()
@@ -35,11 +38,23 @@ public class SheepSpawner : MonoBehaviour
     IEnumerator SpawnSheep()
     {
         yield return new WaitForSeconds(spawnRate);
-        while (true)
+        while (waveCount > 0)
         {
-            yield return new WaitForSeconds(spawnRate);
-            CreateSheep();
+            for(int i = 0; i < sheepCount; i++)
+            {
+                yield return new WaitForSeconds(spawnRate);
+                CreateSheep();
+            }
+
+            sheepCount += 5; //личиваем число спавнящихся овец
+
+
+
+                waveCount--;//
+            yield return new WaitForSeconds(waveRate);//
+            
         }
+        Debug.Log("Finish. You win!");
     }
   
 }

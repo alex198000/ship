@@ -15,4 +15,5 @@ MonoBehaviour:
   sheepName: Doroty
   sheepSpeed: 7
   sheepScale: 2
-  sheepColor: {fileID: 2100000, guid: 76192e63ebf2cc14fb4b84f132b5cff8, type: 2}
+  sheepColor: {fileID: 2100000, guid: 65fd85685b32fbb4c85c6407ec2964ae, type: 2}
+  sheepRotate: {x: 0, y: 0, z: 0}

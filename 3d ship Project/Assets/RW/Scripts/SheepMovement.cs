@@ -5,11 +5,11 @@ using UnityEngine.Events;
 
 public class SheepMovement : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    //[SerializeField] private float speed;
     [SerializeField] private Vector3 diraction;
     [SerializeField] private float jumpForce;
     private Rigidbody rb;
-    private MeshRenderer mrenderer;
+    private MeshRenderer mr;
     [SerializeField] private GameObject heartEffect;
     [SerializeField] private SheepProperty sheepProperty;
     [SerializeField] private SoundManager soundManager;
@@ -22,9 +22,9 @@ public class SheepMovement : MonoBehaviour
 
     private void Awake()
     {
-
+        mr = GetComponent<MeshRenderer>();
         rb = GetComponent<Rigidbody>();
-        mrenderer = GetComponent<MeshRenderer>();
+
     }
 
     void Update()
@@ -61,7 +61,7 @@ public class SheepMovement : MonoBehaviour
         if (senoMoovement != null)                                            //(other.gameObject.tag == "Seno")
         {
 
-            //shootSheep.Invoke();
+           // shootSheep.Invoke();
             
             rb.isKinematic = false;
             GetComponent<BoxCollider>().enabled = false;
@@ -71,6 +71,7 @@ public class SheepMovement : MonoBehaviour
             soundManager.PlaySheepHitClip();
             GameObject effect = Instantiate(heartEffect, transform.position, heartEffect.transform.rotation);
             Destroy(effect, 1f);
+
 
             scoreManager.SaveSheep();
             savedSheepEvent.Raise();
@@ -85,7 +86,9 @@ public class SheepMovement : MonoBehaviour
     }
 
 
-    void DestroySheep()
+
+
+     void DestroySheep()
     {
         rb.isKinematic = false;
         GetComponent<BoxCollider>().enabled = false;
@@ -100,13 +103,18 @@ public class SheepMovement : MonoBehaviour
 
         savedSheepEvent.Raise();
     }
-        public void SetPropertyToSheep(SheepProperty sheepProperty)
+
+
+
+    public void SetPropertyToSheep(SheepProperty sheepProperty)
     {
         this.sheepProperty = sheepProperty;
         transform.localScale = new Vector3(sheepProperty.ScaleSheep, sheepProperty.ScaleSheep, sheepProperty.ScaleSheep);
-        mrenderer.material = sheepProperty.SheepColor;
+        mr.material = sheepProperty.SheepColor;
 
-        speed = sheepProperty.SpeedSheep;
+
+
+        //Material.Color = sheepProperty.SheepColor;
     }
     
 }

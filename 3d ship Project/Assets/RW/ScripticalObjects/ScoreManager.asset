@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a11105573e07c34aa96bf170f88c77f, type: 3}
+  m_Script: {fileID: 11500000, guid: 95b7e5769d2c32d4cb3781ed2bdceb10, type: 3}
   m_Name: ScoreManager
   m_EditorClassIdentifier: 
   sheepSaved: 0
-  sheepDropped: 0
+  sheepDropped: 1
   sheepDroppedBeforeGameOver: 5

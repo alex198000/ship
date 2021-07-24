@@ -5,8 +5,8 @@ using UnityEngine;
 public class SheepDestroyer : MonoBehaviour
 {
     [SerializeField] private SoundManager soundManager;
-    [SerializeField] private GameEvent droppedSheepEvent;
     [SerializeField] private ScoreManager scoreManager;
+    [SerializeField] private GameEvent droppedSheepEvent;
     private void OnTriggerExit(Collider other)
     {
         SheepMovement sheepMovement = other.GetComponent<SheepMovement>();
