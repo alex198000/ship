@@ -16,5 +16,5 @@ MonoBehaviour:
   sheepHitClip: {fileID: 8300000, guid: e97ab3d76ee31794ba31802a0f2a719e, type: 3}
   sheepDropClip: {fileID: 8300000, guid: d396aafd153ba394982f2aa1349363de, type: 3}
   tractorMoveClip: {fileID: 8300000, guid: 99b18eec24ce44a449fa10d357d31988, type: 3}
-  ButtonClip: {fileID: 0}
+  ButtonClip: {fileID: 8300000, guid: 50531a29f7242a74a9ed2f3057107f30, type: 3}
   cameraPostion: {x: 0, y: 52, z: -341}
